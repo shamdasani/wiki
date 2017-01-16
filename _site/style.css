@@ -112,6 +112,10 @@ table {
 
 }
 
+p {
+	line-height: 1.5;
+}
+
 
 li.toclevel-1 {
 	background-color: #f8f8f8;
