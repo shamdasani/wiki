@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html{
+	font-family: "Avenir Next", 'Nunito', Helevetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 55em;
+
+} 
+h3.wiki {
+	left: 2%;
+	top: 0;
+	position: absolute;
+}
+.search {
+   margin-top: 75px;
+   display: flex; 
+   justify-content: center;
+}
+
+input {
+	border: none;
+	font-family: "Avenir Next", 'Nunito', Helevetica, Arial, sans-serif;
+	font-size: 1.8em;
+}
+
+
+input:focus {
+	outline: none;
+}
+
+
+.result {
+	background-color: #3f51b5;
+	max-width: 50em;
+	margin: 0 auto;
+	border-radius: 2%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  	margin-bottom: 2%;
+}
+
+.result:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#results  {
+	text-align: center;
+}
+
+h2.card-title {
+	color: #fff;
+	background: #ff4081;
+}
+
+p.extract {
+	color: #fff;
+	max-width: 90%;
+	margin: 0 auto;
+}
+p.me {
+  bottom: 0;
+  right: 20px;
+  position: fixed;
+}
+
+p.clone {
+  bottom: 0;
+  left: 20px;
+  position: fixed;
+}
+
+@media (max-width: 800px) {
+	p.me {
+		display: none;
+	}
+	.search {
+		margin-top: 20%;
+	}
+
+}
+
+/* WIKI PAGE STYLES */
+
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #1976D2;
+}
+#text a {
+	text-decoration: none;
+	color: #000;
+}
+
+#text {
+	padding: 1%;
+}
+
+p::-moz-selection { /* Code for Firefox */
+    background: #42A5F5;
+}
+
+p::selection {
+    background: #42A5F5;
+}
+
+a::-moz-selection { /* Code for Firefox */
+    background: #42A5F5;
+}
+
+a::selection {
+    background: #42A5F5;
+}
+
+li::-moz-selection { /* Code for Firefox */
+    background: #42A5F5;
+}
+
+li::selection {
+    background: #42A5F5;
+}
+
+a:hover {
+	font-style: italic;
+}
+
+a.image {
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1.title {
+	text-align: center;
+	background: #ff4081;
+	color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+h1.title:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
