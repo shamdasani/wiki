@@ -125,12 +125,19 @@ table:hover {
 }
 
 .thumb, .tright, .tleft {
-	float: left;
-	margin: 5px;
-	padding:2px;
+	margin: 1%;
+	padding:  1%;
 	background-color: #f8f8f8;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.tright {
+	float: right;
+}
+
+.tleft {
+	float: left;
 }
 
 .thumb:hover {
@@ -147,7 +154,12 @@ table:hover {
 
 #text p {
 	line-height: 1.5;
-	float: left;
+	text-align: left;
+}
+
+#text .toc {
+	display: inline-block;
+	white-space: nowrap;
 }
 
 
@@ -247,4 +259,884 @@ h1.title {
 h1.title:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+
+/* CSS from Wikipedia */
+
+ul.mw-gallery-packed li.gallerybox div.thumb img, ul.mw-gallery-packed-overlay li.gallerybox div.thumb img, ul.mw-gallery-packed-hover li.gallerybox div.thumb img {
+    margin: 0 auto;
+}
+
+
+.mw-references-columns {
+-webkit-column-width:35em;
+-moz-column-width:35em;
+column-width:35em;
+}
+
+.mw-references-columns li {
+-webkit-column-break-inside:avoid;
+page-break-inside:avoid;
+break-inside:avoid-column;
+}
+
+sup.reference {
+unicode-bidi:isolate;
+white-space:nowrap;
+}
+
+
+.mw-ext-cite-error {
+font-weight:700;
+unicode-bidi:embed;
+}
+
+#p-lang .uls-settings-trigger {
+background:transparent no-repeat right top;
+background-image:0;
+height:16px;
+width:14px;
+float:right;
+cursor:pointer;
+}
+
+.skin-vector #p-lang .uls-settings-trigger {
+margin-top:3px;
+}
+
+#p-lang .uls-settings-trigger:hover {
+background-position:right -16px;
+}
+
+.client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,.client-js .mw-content-rtl .mw-editsection-bracket:not( :first-of-type ) {
+margin-right:.25em;
+color:#555;
+}
+
+.client-js .mw-content-rtl .mw-editsection-bracket:first-of-type,.client-js .mw-content-ltr .mw-editsection-bracket:not( :first-of-type ) {
+margin-left:.25em;
+color:#555;
+}
+
+
+span.comment {
+font-style:italic;
+unicode-bidi:isolate;
+}
+
+
+
+.mw-underline-always a {
+text-decoration:underline;
+}
+
+.mw-underline-never a {
+text-decoration:none;
+}
+
+li span.deleted,span.history-deleted {
+text-decoration:line-through;
+color:#888;
+font-style:italic;
+}
+
+.not-patrolled {
+background-color:#ffa;
+}
+
+.unpatrolled {
+font-weight:700;
+color:red;
+}
+
+div.patrollink {
+font-size:75%;
+text-align:right;
+}
+
+td.mw-label {
+text-align:right;
+vertical-align:middle;
+}
+
+td.mw-submit {
+text-align:left;
+white-space:nowrap;
+}
+
+.mw-input-with-label {
+white-space:nowrap;
+display:inline-block;
+}
+
+.catlinks ul {
+display:inline;
+list-style:none;
+list-style-type:none;
+list-style-image:none;
+vertical-align:middle !ie;
+margin:0;
+padding:0;
+}
+
+.catlinks li {
+line-height:1.25em;
+border-left:1px solid #a2a9b1;
+zoom:1;
+display:inline !ie;
+margin:.125em 0;
+padding:0 .5em;
+}
+
+.catlinks li:first-child {
+padding-left:.25em;
+border-left:0;
+}
+
+.catlinks li a.mw-redirect {
+font-style:italic;
+}
+
+p.mw-protect-editreasons,p.mw-filedelete-editreasons,p.mw-delete-editreasons {
+font-size:90%;
+text-align:right;
+}
+
+.autocomment {
+color:gray;
+}
+
+div.mw-warning-with-logexcerpt {
+margin-bottom:3px;
+border:2px solid #2a4b8d;
+clear:both;
+padding:3px;
+}
+
+span.mw-revdelundel-hidden,input.mw-revdelundel-hidden {
+visibility:hidden;
+}
+
+td.mw-revdel-checkbox,th.mw-revdel-checkbox {
+padding-right:10px;
+text-align:center;
+}
+
+a.new {
+color:#ba0000;
+}
+
+a.mw-selflink {
+color:inherit;
+font-weight:700;
+text-decoration:inherit;
+}
+
+a.mw-selflink:hover {
+cursor:inherit;
+text-decoration:inherit;
+}
+
+a.mw-selflink:active,a.mw-selflink:visited {
+color:inherit;
+}
+
+.plainlinks a.external {
+background:none!important;
+padding:0!important;
+}
+
+table.wikitable {
+background-color:#f8f9fa;
+border:1px solid #a2a9b1;
+border-collapse:collapse;
+color:#000;
+margin:1em 0;
+}
+
+table.wikitable > tr > th,table.wikitable > tr > td,table.wikitable > * > tr > th,table.wikitable > * > tr > td {
+border:1px solid #a2a9b1;
+padding:.2em .4em;
+}
+
+table.wikitable > tr > th,table.wikitable > * > tr > th {
+background-color:#eaecf0;
+text-align:center;
+}
+
+.error,.warning,.success {
+font-size:larger;
+}
+
+.error {
+color:#c00;
+}
+
+.warning {
+color:#705000;
+}
+
+.success {
+color:#009000;
+}
+
+.errorbox,.warningbox,.successbox {
+border:1px solid;
+margin-bottom:1em;
+zoom:1;
+display:inline;
+padding:.5em 1em;
+}
+
+.errorbox h2,.warningbox h2,.successbox h2 {
+font-size:1em;
+color:inherit;
+font-weight:700;
+display:inline;
+border:0;
+margin:0 .5em 0 0;
+}
+
+.errorbox {
+color:#c00;
+background-color:#fae3e3;
+border-color:#fac5c5;
+}
+
+.warningbox {
+color:#705000;
+background-color:#fdf1d1;
+border-color:#fde29b;
+}
+
+.successbox {
+color:green;
+background-color:#e1fddf;
+border-color:#b7fdb5;
+}
+
+.mw-infobox {
+border:2px solid #ff7f00;
+clear:left;
+overflow:hidden;
+margin:.5em;
+}
+
+.mw-infobox-left {
+float:left;
+width:35px;
+margin:7px;
+}
+
+.mw-infobox-right {
+margin:.5em .5em .5em 49px;
+}
+
+.previewnote {
+color:#c00;
+margin-bottom:1em;
+}
+
+.previewnote p {
+text-indent:3em;
+margin:.8em 0;
+}
+
+.mw-datatable {
+border-collapse:collapse;
+}
+
+.mw-datatable,.mw-datatable td,.mw-datatable th {
+border:1px solid #a2a9b1;
+padding:0 .15em;
+}
+
+.mw-datatable th {
+background-color:#ddf;
+}
+
+.mw-datatable td {
+background-color:#fff;
+}
+
+.mw-datatable tr:hover td {
+background-color:#eaf3ff;
+}
+
+.mw-content-ltr ul,.mw-content-rtl .mw-content-ltr ul {
+margin:.3em 0 0 1.6em;
+padding:0;
+}
+
+.mw-content-rtl ul,.mw-content-ltr .mw-content-rtl ul {
+margin:.3em 1.6em 0 0;
+padding:0;
+}
+
+.mw-content-ltr ol,.mw-content-rtl .mw-content-ltr ol {
+margin:.3em 0 0 3.2em;
+padding:0;
+}
+
+.mw-content-rtl ol,.mw-content-ltr .mw-content-rtl ol {
+margin:.3em 3.2em 0 0;
+padding:0;
+}
+
+.mw-content-ltr dd,.mw-content-rtl .mw-content-ltr dd {
+margin-left:1.6em;
+margin-right:0;
+}
+
+.mw-content-rtl dd,.mw-content-ltr .mw-content-rtl dd {
+margin-right:1.6em;
+margin-left:0;
+}
+
+.mw-ajax-loader {
+background-image:url(/w/resources/src/mediawiki.legacy/images/ajax-loader.gif?57f34);
+background-position:center center;
+background-repeat:no-repeat;
+position:relative;
+top:-16px;
+padding:16px;
+}
+
+.mw-small-spinner {
+margin-right:.6em;
+background-image:url(/w/resources/src/mediawiki.legacy/images/spinner.gif?ca65b);
+background-position:center center;
+background-repeat:no-repeat;
+padding:10px!important;
+}
+
+h1:lang( anp ),h1:lang( as ),h1:lang( bh ),h1:lang( bho ),h1:lang( bn ),h1:lang( gu ),h1:lang( hi ),h1:lang( kn ),h1:lang( ks ),h1:lang( ml ),h1:lang( mr ),h1:lang( my ),h1:lang( mai ),h1:lang( ne ),h1:lang( new ),h1:lang( or ),h1:lang( pa ),h1:lang( pi ),h1:lang( sa ),h1:lang( ta ),h1:lang( te ) {
+line-height:1.6em!important;
+}
+
+h2:lang( anp ),h3:lang( anp ),h4:lang( anp ),h5:lang( anp ),h6:lang( anp ),h2:lang( as ),h3:lang( as ),h4:lang( as ),h5:lang( as ),h6:lang( as ),h2:lang( bho ),h3:lang( bho ),h4:lang( bho ),h5:lang( bho ),h6:lang( bho ),h2:lang( bh ),h3:lang( bh ),h4:lang( bh ),h5:lang( bh ),h6:lang( bh ),h2:lang( bn ),h3:lang( bn ),h4:lang( bn ),h5:lang( bn ),h6:lang( bn ),h2:lang( gu ),h3:lang( gu ),h4:lang( gu ),h5:lang( gu ),h6:lang( gu ),h2:lang( hi ),h3:lang( hi ),h4:lang( hi ),h5:lang( hi ),h6:lang( hi ),h2:lang( kn ),h3:lang( kn ),h4:lang( kn ),h5:lang( kn ),h6:lang( kn ),h2:lang( ks ),h3:lang( ks ),h4:lang( ks ),h5:lang( ks ),h6:lang( ks ),h2:lang( ml ),h3:lang( ml ),h4:lang( ml ),h5:lang( ml ),h6:lang( ml ),h2:lang( mr ),h3:lang( mr ),h4:lang( mr ),h5:lang( mr ),h6:lang( mr ),h2:lang( my ),h3:lang( my ),h4:lang( my ),h5:lang( my ),h6:lang( my ),h2:lang( mai ),h3:lang( mai ),h4:lang( mai ),h5:lang( mai ),h6:lang( mai ),h2:lang( ne ),h3:lang( ne ),h4:lang( ne ),h5:lang( ne ),h6:lang( ne ),h2:lang( new ),h3:lang( new ),h4:lang( new ),h5:lang( new ),h6:lang( new ),h2:lang( or ),h3:lang( or ),h4:lang( or ),h5:lang( or ),h6:lang( or ),h2:lang( pa ),h3:lang( pa ),h4:lang( pa ),h5:lang( pa ),h6:lang( pa ),h2:lang( pi ),h3:lang( pi ),h4:lang( pi ),h5:lang( pi ),h6:lang( pi ),h2:lang( sa ),h3:lang( sa ),h4:lang( sa ),h5:lang( sa ),h6:lang( sa ),h2:lang( ta ),h3:lang( ta ),h4:lang( ta ),h5:lang( ta ),h6:lang( ta ),h2:lang( te ),h3:lang( te ),h4:lang( te ),h5:lang( te ),h6:lang( te ) {
+line-height:1.2em;
+}
+
+ol:lang( azb ) li,ol:lang( bcc ) li,ol:lang( bgn ) li,ol:lang( bqi ) li,ol:lang( fa ) li,ol:lang( glk ) li,ol:lang( kk-arab ) li,ol:lang( lrc ) li,ol:lang( luz ) li,ol:lang( mzn ) li {
+list-style-type:persian;
+}
+
+ol:lang( ckb ) li,ol:lang( sdh ) li {
+list-style-type:arabic-indic;
+}
+
+ol:lang( hi ) li,ol:lang( mr ) li {
+list-style-type:devanagari;
+}
+
+ol:lang( as ) li,ol:lang( bn ) li {
+list-style-type:bengali;
+}
+
+ol:lang( or ) li {
+list-style-type:oriya;
+}
+
+#toc ul,.toc ul {
+margin:.3em 0;
+}
+
+.mw-content-ltr .toc ul ul,.mw-content-ltr #toc ul ul,.mw-content-rtl .mw-content-ltr .toc ul ul,.mw-content-rtl .mw-content-ltr #toc ul ul {
+margin:0 0 0 2em;
+}
+
+.mw-content-rtl .toc ul ul,.mw-content-rtl #toc ul ul,.mw-content-ltr .mw-content-rtl .toc ul ul,.mw-content-ltr .mw-content-rtl #toc ul ul {
+margin:0 2em 0 0;
+}
+
+div.tright,div.floatright,table.floatright {
+clear:right;
+float:right;
+}
+
+div.tleft,div.floatleft,table.floatleft {
+float:left;
+clear:left;
+}
+
+#mw-credits a {
+unicode-bidi:embed;
+}
+
+.mw-jump,#jump-to-nav {
+overflow:hidden;
+height:0;
+zoom:1;
+}
+
+.xdebug-error {
+position:absolute;
+z-index:99;
+}
+
+.mw-editsection,.mw-editsection-like {
+font-size:small;
+font-weight:400;
+margin-left:1em;
+vertical-align:baseline;
+line-height:1em;
+display:inline-block;
+}
+
+.mw-content-ltr .mw-editsection,.mw-content-rtl .mw-content-ltr .mw-editsection {
+margin-left:1em;
+}
+
+.mw-content-rtl .mw-editsection,.mw-content-ltr .mw-content-rtl .mw-editsection {
+margin-right:1em;
+}
+
+sup,sub {
+line-height:1;
+}
+
+li.gallerybox {
+vertical-align:top;
+display:inline-block;
+}
+
+ul.gallery,li.gallerybox {
+zoom:1;
+display:inline;
+}
+
+ul.gallery {
+display:block;
+margin:2px;
+padding:2px;
+}
+
+li.gallerycaption {
+font-weight:700;
+text-align:center;
+display:block;
+word-wrap:break-word;
+}
+
+li.gallerybox div.thumb {
+text-align:center;
+border:1px solid #c8ccd1;
+background-color:#f8f9fa;
+margin:2px;
+}
+
+li.gallerybox div.thumb img {
+display:block;
+margin:0 auto;
+}
+
+div.gallerytext {
+overflow:hidden;
+font-size:94%;
+word-wrap:break-word;
+padding:2px 4px;
+}
+
+.galleryfilename-truncate {
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+ul.mw-gallery-packed li.gallerybox div.thumb img,ul.mw-gallery-packed-overlay li.gallerybox div.thumb img,ul.mw-gallery-packed-hover li.gallerybox div.thumb img {
+margin:0 auto;
+}
+
+ul.mw-gallery-packed-hover div.gallerytextwrapper {
+overflow:hidden;
+height:0;
+}
+
+ul.mw-gallery-packed-hover li.gallerybox:hover div.gallerytextwrapper,ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper,ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper {
+position:absolute;
+background:rgba(255,255,255,0.8);
+bottom:0;
+left:0;
+height:auto;
+max-height:40%;
+overflow:hidden;
+font-weight:700;
+margin:2px;
+padding:5px 10px;
+}
+
+ul.mw-gallery-packed-hover li.gallerybox:hover div.gallerytextwrapper p,ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper p,ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper p {
+text-overflow:ellipsis;
+white-space:nowrap;
+overflow:hidden;
+}
+
+ul.mw-gallery-packed-hover li.gallerybox div.gallerytextwrapper:hover,ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper:hover,ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper:hover {
+overflow:visible;
+max-height:none;
+}
+
+ul.mw-gallery-packed-hover li.gallerybox div.gallerytextwrapper:hover p,ul.mw-gallery-packed-overlay li.gallerybox div.gallerytextwrapper:hover p,ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapper:hover p {
+text-overflow:clip;
+white-space:normal;
+overflow:visible;
+}
+
+ul.gallery.mw-gallery-slideshow {
+display:block;
+margin:4em 0;
+}
+
+ul.gallery.mw-gallery-slideshow .gallerycaption {
+font-size:1.3em;
+margin:0;
+}
+
+ul.gallery.mw-gallery-slideshow .gallerycarousel.mw-gallery-slideshow-thumbnails-toggled {
+margin-bottom:1.3em;
+}
+
+ul.gallery.mw-gallery-slideshow .mw-gallery-slideshow-buttons {
+opacity:0.5;
+padding:1.3em 0;
+}
+
+ul.gallery.mw-gallery-slideshow .mw-gallery-slideshow-buttons .oo-ui-buttonElement {
+margin:0 2em;
+}
+
+.mw-gallery-slideshow li.gallerybox.slideshow-current {
+background:#efefef;
+}
+
+.mw-gallery-slideshow .gallerybox > div {
+max-width:120px;
+}
+
+ul.mw-gallery-slideshow li.gallerybox div.thumb {
+border:0;
+background:transparent;
+}
+
+ul.mw-gallery-slideshow li.gallerycarousel {
+display:block;
+text-align:center;
+}
+
+.mw-wiki-logo {
+background-image:url(/static/images/project-logos/enwiki.png);
+}
+
+to {
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+transform:rotate(360deg);
+}
+
+#ca-unwatch.icon a,#ca-watch.icon a {
+display:block;
+width:26px;
+_margin-top:-.8em;
+height:0;
+overflow:hidden;
+background-position:5px 60%;
+margin:0;
+padding:3.1em 0 0;
+}
+
+#ca-unwatch.icon a.loading,#ca-watch.icon a.loading {
+background-image:0;
+-webkit-animation:rotate 700ms infinite linear;
+-moz-animation:rotate 700ms infinite linear;
+-o-animation:rotate 700ms infinite linear;
+animation:rotate 700ms infinite linear;
+outline:0;
+cursor:default;
+pointer-events:none;
+background-position:50% 60%;
+-webkit-transform-origin:50% 57%;
+transform-origin:50% 57%;
+}
+
+#mw-navigation h2 {
+position:absolute;
+top:-9999px;
+}
+
+#mw-page-base {
+height:5em;
+background-position:bottom left;
+background-repeat:repeat-x;
+background-image:linear-gradient(#ffffff50%,#f6f6f6100%);
+background-color:#fff;
+}
+
+#mw-head-base {
+margin-top:-5em;
+margin-left:10em;
+height:5em;
+}
+
+div#mw-head {
+position:absolute;
+top:0;
+right:0;
+width:100%;
+}
+
+div#mw-head h3 {
+margin:0;
+padding:0;
+}
+
+#left-navigation {
+float:left;
+margin-left:10em;
+margin-top:2.5em;
+margin-bottom:-2.5em;
+display:inline;
+}
+
+#right-navigation {
+float:right;
+margin-top:2.5em;
+}
+
+#p-logo {
+position:absolute;
+top:-160px;
+left:0;
+width:10em;
+height:160px;
+}
+
+#p-logo a {
+display:block;
+width:10em;
+height:160px;
+background-repeat:no-repeat;
+background-position:center center;
+text-decoration:none;
+}
+
+div#mw-panel {
+font-size:inherit;
+position:absolute;
+top:160px;
+padding-top:1em;
+width:10em;
+left:0;
+}
+
+div#mw-panel div.portal {
+direction:ltr;
+background-position:top left;
+background-repeat:no-repeat;
+margin:0 .6em 0 .7em;
+padding:.25em 0;
+}
+
+div#mw-panel div.portal h3 {
+font-size:.75em;
+color:#4d4d4d;
+font-weight:400;
+cursor:default;
+border:0;
+margin:.5em 0 0;
+padding:.25em 0 .25em .7em;
+}
+
+div#mw-panel div.portal div.body {
+padding-top:0;
+background-image:url(/w/skins/Vector/images/portal-break.png?3ea1b)!ie;
+background-repeat:no-repeat;
+margin:0 0 0 .6em;
+}
+
+div#mw-panel div.portal div.body ul {
+list-style-type:none;
+list-style-image:none;
+margin:0;
+padding:.3em 0 0;
+}
+
+div#mw-panel div.portal div.body ul li {
+line-height:1.125em;
+font-size:.75em;
+word-wrap:break-word;
+margin:0;
+padding:.25em 0;
+}
+
+div#mw-panel div.portal div.body ul li a {
+color:#0645ad;
+}
+
+div#mw-panel div.portal div.body ul li a:visited {
+color:#0b0080;
+}
+
+div#mw-panel #p-logo + div.portal {
+background-image:none;
+margin-top:0;
+}
+
+div#mw-panel #p-logo + div.portal div.body {
+background-image:none;
+margin-left:.5em;
+}
+
+div#footer {
+margin-left:10em;
+margin-top:0;
+direction:ltr;
+padding:.75em;
+}
+
+div#footer ul {
+list-style-type:none;
+list-style-image:none;
+margin:0;
+padding:0;
+}
+
+div#footer ul li {
+color:#333;
+font-size:.7em;
+margin:0;
+padding:.5em 0;
+}
+
+div#footer #footer-icons li {
+float:left;
+margin-left:.5em;
+line-height:2em;
+text-align:right;
+}
+
+div#footer #footer-info li {
+line-height:1.4em;
+}
+
+div#footer #footer-places li {
+float:left;
+margin-right:1em;
+line-height:2em;
+}
+
+.mw-body-content .external {
+background-position:center right;
+background-repeat:no-repeat;
+background-image:0;
+padding-right:13px;
+}
+
+.wb-langlinks-link {
+line-height:1.125em;
+font-size:.75em;
+float:right;
+list-style:none none;
+text-align:right;
+padding-right:.5em!important;
+}
+
+.wb-langlinks-link > a {
+padding-left:11px;
+background:no-repeat left center;
+}
+
+.wb-langlinks-link > a:link,.wb-langlinks-link > a:visited {
+background-image:url(/w/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil.png?3bd62)!ie;
+color:#797979!important;
+}
+
+.wb-langlinks-link > a:hover {
+background-image:url(/w/extensions/Wikidata/extensions/Wikibase/client/resources/images/WBC-Asset-Pencil-Hover.png?718b0)!ie;
+color:#0645ad!important;
+}
+
+div.after-portlet-lang:after {
+content:'';
+clear:both;
+display:block;
+}
+
+.mw-cite-backlink,.cite-accessibility-label,.mw-editsection,#jump-to-nav {
+-moz-user-select:none;
+-webkit-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}
+
+.client-nojs #ca-ve-edit,.client-nojs .mw-editsection-divider,.client-nojs .mw-editsection-visualeditor,.ve-not-available #ca-ve-edit,.ve-not-available .mw-editsection-divider,.ve-not-available .mw-editsection-visualeditor,.mw-hidden-cats-hidden,.catlinks-allhidden,.printfooter,.mw-headline-anchor,#ca-unwatch.icon a span,#ca-watch.icon a span,div#mw-panel #p-logo + div.portal h3 {
+display:none;
+}
+
+#editform,#toolbar,#wpTextbox1,.visualClear {
+clear:both;
+}
+
+.mw-editfont-default:not( textarea ),.mw-editfont-monospace {
+font-family:monospace;
+}
+
+td.mw-input,.mw-content-ltr .thumbcaption,#catlinks,.mw-content-ltr .toc ul,.mw-content-ltr #toc ul,.mw-content-rtl .mw-content-ltr .toc ul,.mw-content-rtl .mw-content-ltr #toc ul {
+text-align:left;
+}
+
+.mw-content-ltr .magnify,div#footer #footer-icons {
+float:right;
+}
+
+.mw-content-rtl .thumbcaption,.mw-content-rtl .toc ul,.mw-content-rtl #toc ul,.mw-content-ltr .mw-content-rtl .toc ul,.mw-content-ltr .mw-content-rtl #toc ul {
+text-align:right;
+}
+
+.mw-content-rtl .magnify,body.ltr div#footer #footer-places {
+float:left;
+}
+
+.newpage,.minoredit,.botedit,table.wikitable > caption {
+font-weight:700;
+}
+
+div.mw-warning-with-logexcerpt ul li,span.mw-revdelundel-link,strong.mw-revdelundel-link {
+font-size:90%;
+}
+
+.rtl a.external.free,.rtl a.external.autonumber,#mw-clearyourcache,#mw-sitecsspreview,#mw-sitejspreview,#mw-usercsspreview,#mw-userjspreview {
+direction:ltr;
+unicode-bidi:embed;
+}
+
+#toc #toctitle,.toc #toctitle,#toc .toctitle,.toc .toctitle,#mw-revision-info,#mw-revision-info-current,#mw-revision-nav {
+direction:ltr;
+}
+
+div.floatright,table.floatright,div.floatleft,table.floatleft,ul.mw-gallery-packed-hover li.gallerybox,ul.mw-gallery-packed-overlay li.gallerybox {
+position:relative;
+}
+
+.galleryfilename,.mw-gallery-slideshow-img-container a {
+display:block;
+}
+
+ul.mw-gallery-nolines li.gallerybox div.thumb,ul.mw-gallery-packed li.gallerybox div.thumb,ul.mw-gallery-packed-overlay li.gallerybox div.thumb,ul.mw-gallery-packed-hover li.gallerybox div.thumb {
+background-color:transparent;
+border:0;
+}
+
+ul.mw-gallery-nolines li.gallerybox div.gallerytext,ul.mw-gallery-packed-hover,ul.mw-gallery-packed-overlay,ul.mw-gallery-packed {
+text-align:center;
+}
+
+#ca-unwatch.icon a,#ca-watch.icon a,#ca-unwatch.icon a:hover,#ca-unwatch.icon a:focus,#ca-watch.icon a:hover,#ca-watch.icon a:focus {
+background-image:0;
+}
+
+
+
+
+
 
